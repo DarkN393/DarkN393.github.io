@@ -19,29 +19,14 @@
       background-attachment: fixed;
     }
 
-.container {
-  position: relative;
-  max-width: 900px;
-  margin: auto;
-  padding: 2rem;
-  background-color: #000; /* fond noir */
-  border-radius: 12px;
-  color: white;
-  z-index: 1;
-  overflow: visible;
-  box-sizing: border-box;
-}
-
-.container::before {
-  content: "";
-  position: absolute;
-  top: -10px; left: -10px; right: -10px; bottom: -10px;
-  border-radius: 22px;
-  background: linear-gradient(45deg, #a0e9ff, #b0b0b0); /* bleu clair → gris */
-  filter: blur(12px);
-  opacity: 0.8;
-  z-index: -1;
-}
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 12px;
+      box-shadow: 0 0 12px #0ff;
+    }
 
     h1 {
       text-align: center;
@@ -51,13 +36,13 @@
     }
 
     .verse {
-      margin-bottom: 1rem;
-      line-height: 1.2;
+      margin-bottom: 2rem;
+      line-height: 1.6;
       white-space: pre-wrap;
     }
 
     .title {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       color: #0f0;
       margin-top: 1rem;
       margin-bottom: 0.5rem;
@@ -71,14 +56,14 @@
     .footer {
       text-align: center;
       margin-top: 3rem;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       color: #888;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1> Crazy Serveur Mental </h1>
+    <h1>🎤 Crazy Serveur Mental 🎮</h1>
 
     <div class="verse"><span class="title">[Intro – faut parlé]</span>
 Yo…
